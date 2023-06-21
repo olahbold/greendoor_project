@@ -4,7 +4,7 @@ import Multipart from "./components/Multipart";
 
 function App() {
   return <div className="App">
-    <Multipart/>
+    <Multipart
   </div>;
 }
 
