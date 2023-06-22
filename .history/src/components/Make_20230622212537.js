@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import { Form, FormLabel } from "react-bootstrap";
 import { Wrapper } from "../App";
-import { Data } from "./Data";
 
 // This is the select your Make component
 
@@ -27,11 +26,12 @@ export default function Make() {
           required
         >
           <option value="">Select your model</option>
-          {Data.map((val) => (
-            <option key={val.id} value={val.label}>
-              {val.label}
-            </option>
-          ))}
+          <option value="Audi">Audi</option>
+          <option value="BMW">BMW</option>
+          <option value="Vauxhal">Vauxhal</option>
+          <option value="Mercedes">Mercedes</option>
+          <option value="Peugeot">Peugeot</option>
+          <option value="Renault">Renault</option>
         </Form.Select>
       </Form>
     </div>

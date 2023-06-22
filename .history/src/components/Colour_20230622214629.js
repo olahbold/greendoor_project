@@ -21,10 +21,13 @@ export default function Colour() {
         >
           <option value="">Select Colour</option>
           {ColorData.map((col) => (
-            <option key={col.id} value={col.Color}>
-              {col.Color}
-            </option>
-          ))}
+   <option key={col.id} value={col.Color}>
+     {col.Color}
+   </option>
+ ))}
+        
+        
+        
         </Form.Select>
       </Form>
     </div>

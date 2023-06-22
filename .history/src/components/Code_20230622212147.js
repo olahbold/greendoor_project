@@ -7,13 +7,12 @@ export default function Code() {
 
   return (
     <>
-      <Form.Label htmlFor="text-input" style={{color:'white'}}>Code</Form.Label>
+      <Form.Label htmlFor="text-input" style={{color}}>Code</Form.Label>
       <Form.Control
         type="text"
         aria-describedby="text"
         value={code}
         onChange={codeInputHandler}
-        required
       />
     </>
   );

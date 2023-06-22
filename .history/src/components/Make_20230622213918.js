@@ -27,11 +27,7 @@ export default function Make() {
           required
         >
           <option value="">Select your model</option>
-          {Data.map((val) => (
-            <option key={val.id} value={val.label}>
-              {val.label}
-            </option>
-          ))}
+          { Data.map(<option value="Audi">Audi</option>}
         </Form.Select>
       </Form>
     </div>

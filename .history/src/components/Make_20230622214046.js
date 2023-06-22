@@ -28,9 +28,7 @@ export default function Make() {
         >
           <option value="">Select your model</option>
           {Data.map((val) => (
-            <option key={val.id} value={val.label}>
-              {val.label}
-            </option>
+            <option  key= {val.id} value={val.label}>{}</option>
           ))}
         </Form.Select>
       </Form>

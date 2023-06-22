@@ -13,7 +13,6 @@ export default function Code() {
         aria-describedby="text"
         value={code}
         onChange={codeInputHandler}
-        required
       />
     </>
   );

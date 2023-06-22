@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import { Form, FormLabel } from "react-bootstrap";
 import { Wrapper } from "../App";
-import { ColorData } from "./Data";
 
 // This is the select your Make component
 export default function Colour() {
@@ -20,11 +19,14 @@ export default function Colour() {
           required
         >
           <option value="">Select Colour</option>
-          {ColorData.map((col) => (
-            <option key={col.id} value={col.Color}>
-              {col.Color}
-            </option>
-          ))}
+          {Data.map((val) => (
+   <option key={val.id} value={val.label}>
+     {val.label}
+   </option>
+ ))}
+        
+        
+        
         </Form.Select>
       </Form>
     </div>
